@@ -9,6 +9,16 @@ For the Ren'py part:
 1. Copy the `discord.rpy` file into your Ren'py project's `game` folder.
 2. Copy the labels in the `script.rpy` file into your own `script.rpy` file.
 3. Alternatively, if you already have those labels in your code, just copy the contents of the labels in the `script.rpy` file into your labels.
+4. Download and install the latest version of Python from https://www.python.org/ . Make sure to enable the "Add to PATH" option, and feel free to make the path limit longer as well.
+5. Open a Powershell shell in the location of your project's game folder.
+   1. You can do that by holding down the SHIFT key and right clicking an empty space within the folder and then clicking "Open Powershell window here", or by SHIFT-right clicking the `game` folder itself and clicking the same option.
+   2. The Powershell prompt should show the current path displayed in the last line. Make sure you're in the `game` folder!
+6. Run the command:
+
+        python -m pip install --target python-packages discord-rpc.py
+7. Run the command:
+
+        python -m pip install --target python-packages requests
 
 
 For the Discord part:
@@ -58,6 +68,12 @@ add the following:
         label _("Discord Integration")
         textbutton _("On") action SetField(persistent, "discord_integration", True)
         textbutton _("Off") action SetField(persistent, "discord_integration", False)
+
+
+## Support
+
+If you have any difficulties following the tutorial, or have any questions, feel free to open a Github issue on this repository!
+
 
 ## Licensing
 
