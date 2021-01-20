@@ -16,7 +16,7 @@ For the Ren'py part:
 6. Run the command:
 
         python -m pip install --target python-packages discord-rpc.py
-7. Run the command:
+7. If you're running Renpy below version 7.4, then run the command:
 
         python -m pip install --target python-packages requests
 
