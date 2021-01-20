@@ -25,7 +25,7 @@ default persistent.discord_integration = True
 
 
 init -20 python:
-from __future__ import print_function
+    from __future__ import print_function
 
     import discord_rpc
     import time
